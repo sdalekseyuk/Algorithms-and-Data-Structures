@@ -1,14 +1,18 @@
 def insertion_sort(lst):
-    # We start sorting from the second element, because the first element is considered to be already sorted
+    # Start on the second element as we assume the first element is sorted
     for i in range(1, len(lst)):
         item_to_insert = lst[i]
-        # Keep a link to the index of the previous item
+        # And keep a reference of the index of the previous element
         j = i - 1
-        # Move the elements of the sorted segment forward if they are larger than the element to insert
+        # Move all items of the sorted segment forward if they are larger than the item to insert
         while j >= 0 and lst[j] > item_to_insert:
             lst[j + 1] = lst[j]
             j -= 1
-        # Insert element
+        # Insert the item
         lst[j + 1] = item_to_insert
-    return lst
 
+
+# Verify it works
+random_list_of_nums = [9, 1, 15, 28, 6]
+insertion_sort(random_list_of_nums)
+print(random_list_of_nums)

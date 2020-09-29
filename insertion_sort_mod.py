@@ -5,4 +5,9 @@ def insertion_sort(lst):
         while j >= 0 and lst[j] > lst[j + 1]:
             lst[j], lst[j + 1] = lst[j + 1], lst[j]
             j -= 1
-    return lst
+
+
+# Verify it works
+random_list_of_nums = [9, 1, 15, 28, 6]
+insertion_sort(random_list_of_nums)
+print(random_list_of_nums)
