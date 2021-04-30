@@ -8,7 +8,7 @@ def insertion_sort(lst):
         lst[j + 1] = item_to_insert
 
 
-# Verify it works
-list_of_nums = [9, 1, 15, 28, 6]
-insertion_sort(list_of_nums)
-print(list_of_nums)  # [1, 6, 9, 15, 28]
+if __name__ == '__main__':
+    list_of_nums = [9, 1, 15, 28, 6]
+    insertion_sort(list_of_nums)
+    print(list_of_nums)  # [1, 6, 9, 15, 28]
