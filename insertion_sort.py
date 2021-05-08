@@ -9,6 +9,6 @@ def insertion_sort(lst):
 
 
 if __name__ == '__main__':
-    list_of_nums = [9, 1, 15, 28, 6]
+    list_of_nums = [9, 1, -3, 15, 28, 6, -5, 0, 7]
     insertion_sort(list_of_nums)
-    print(list_of_nums)  # [1, 6, 9, 15, 28]
+    print(list_of_nums)  # [-5, -3, 0, 1, 6, 7, 9, 15, 28]
