@@ -8,7 +8,7 @@ def selection_sort(lst):
         lst[smallest], lst[i] = lst[i], lst[smallest]
 
 
-# Verify it works
-data = [-2, 45, 0, 11, 9]
-selection_sort(data)
-print(data)  # [-2, 0, 9, 11, 45]
+if __name__ == '__main__':
+    list_of_nums = [0, 45, -2, 11, 9]
+    selection_sort(list_of_nums)
+    print(list_of_nums)
