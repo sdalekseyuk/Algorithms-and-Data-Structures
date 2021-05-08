@@ -9,6 +9,6 @@ def selection_sort(lst):
 
 
 if __name__ == '__main__':
-    list_of_nums = [0, 45, -2, 11, 9]
+    list_of_nums = [0, 7, -2, 11, 9, 2, 1, 5]
     selection_sort(list_of_nums)
-    print(list_of_nums)
+    print(list_of_nums)  # [-2, 0, 1, 2, 5, 7, 9, 11]
