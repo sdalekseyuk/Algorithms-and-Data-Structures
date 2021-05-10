@@ -12,8 +12,13 @@ def binary_search(lst, key):
     return -1
 
 
-# Verify it works
-random_list_of_nums = [1, 3, 5, 8, 10]
-item = 8
-result = binary_search(random_list_of_nums, item)
-print(result)  # => 3
+if __name__ == '__main__':
+    list_of_nums = [1, 3, 5, 7, 8, 9, 10]
+
+    first_example = 7
+    first_example_index = binary_search(list_of_nums, first_example)
+    print(first_example_index)  # 3
+
+    second_example = 4
+    second_example_index = binary_search(list_of_nums, second_example)
+    print(second_example_index)  # -1 / num not found
