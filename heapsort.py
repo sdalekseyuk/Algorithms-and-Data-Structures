@@ -17,13 +17,13 @@ def heap_sort(lst):
     # Build a max_heap
     for i in range(heap_size//2 - 1, -1, -1):
         max_heapify(lst, heap_size, i)
-    # Max heapify
+    # Sorting with max_heapify
     for i in range(heap_size - 1, 0, -1):
         lst[0], lst[i] = lst[i], lst[0]
         max_heapify(lst, i, 0)
 
 
-# Verify it works
-random_list_of_nums = [1, 8, 20, 10, 4, 7, 30, 2, 3, 6]
-heap_sort(random_list_of_nums)
-print(random_list_of_nums)  # [1, 2, 3, 4, 6, 7, 8, 10, 20, 30]
+if __name__ == '__main__':
+    list_of_nums = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+    heap_sort(list_of_nums)
+    print(list_of_nums)  # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
