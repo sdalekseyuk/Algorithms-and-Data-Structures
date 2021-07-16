@@ -3,7 +3,7 @@ def max_heapify(lst, heapsize, i):
     largest = i
     left = 2 * i + 1
     right = 2 * i + 2
-    if left < heapsize and lst[left] > lst[i]:
+    if left < heapsize and lst[left] > lst[largest]:
         largest = left
     if right < heapsize and lst[right] > lst[largest]:
         largest = right
